@@ -12,30 +12,31 @@
   </head>
 
   <body>
-    <!-- Header Alanı-->
+    <!-- h -->
     <header>
       <div class="nav-bar">
         <!-- Logo-->
         <a href="#" class="logo-web"
           >WEB<span class="logo-studio-header">STUDIO</span></a
         >
-        <!-- Logo Bitti-->
-
-        <button class="btn-menu" type="button">
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-toggle-checkbox"
+          aria-label="Toggle menu"
+        />
+        <label for="menu-toggle" class="hamburger-menu-label">
           <svg height="8" width="8" class="icon-menu">
             <use xlink:href="./images/icons.svg#icon-menu"></use>
           </svg>
-        </button>
+        </label>
 
-        <!-- Mobil için menü başlangıcı -->
-        <div class="menu-content">
-          <div class="button-field">
-            <button class="close-button" type="button">
-              <svg height="8" width="8" class="icon-close">
-                <use xlink:href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
+        <div class="menu-card">
+          <label for="menu-toggle" class="close-button">
+            <svg height="8" width="8" class="icon-close">
+              <use xlink:href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </label>
 
           <nav>
             <ul class="menu-headings">
@@ -85,33 +86,17 @@
             </ul>
           </div>
         </div>
-        <!-- Mobil için menü bitişi -->
-
-        <!-- Tablet ve Desktop için menü başlangıcı -->
-        <nav>
-          <ul>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li><a href="#">info@devstudio.com</a></li>
-            <li><a href="#">+11 (000) 111-11-11</a></li>
-          </ul>
-        </address>
-        <!-- Tablet ve Desktop için menü bitişi -->
       </div>
+      <!-- Logo Bitti-->
     </header>
-    <!-- Header Alanı Bitti-->
+    <!-- h -->
 
     <!-- Main Alanı-->
     <main>
       <!-- İlk Alan-->
       <section class="first-section-box">
         <div class="container">
-          <h1>
+          <h1 class="title-effective">
             Effective <span class="line-break"></span>Solutions <br />for Your
             <span class="line-break"></span>Business
           </h1>
@@ -131,8 +116,8 @@
                     <use href="./images/icons.svg#icon-antenna"></use>
                   </svg>
                 </div>
-                <h3>Strategy</h3>
-                <p>
+                <h2>Strategy</h2>
+                <p class="prgrf">
                   Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
@@ -143,8 +128,8 @@
                     <use href="./images/icons.svg#icon-clock"></use>
                   </svg>
                 </div>
-                <h3>Punctuality</h3>
-                <p>
+                <h2>Punctuality</h2>
+                <p class="prgrf">
                   Bring the key message to the brand's audience for the best
                   price within the shortest possible time.
                 </p>
@@ -155,8 +140,8 @@
                     <use href="./images/icons.svg#icon-diagram"></use>
                   </svg>
                 </div>
-                <h3>Diligence</h3>
-                <p>
+                <h2>Diligence</h2>
+                <p class="prgrf">
                   Research and confirm brands with the strongest digital growth
                   opportunities and minimize risk.
                 </p>
@@ -167,8 +152,8 @@
                     <use href="./images/icons.svg#icon-astronaut"></use>
                   </svg>
                 </div>
-                <h3>Technologies</h3>
-                <p>
+                <h2>Technologies</h2>
+                <p class="prgrf">
                   Design practice focused on digital experiences. We bring forth
                   a deep passion for problem-solving.
                 </p>
@@ -185,7 +170,7 @@
           <h2 class="third-section-title">Our Team</h2>
           <ul class="team-list">
             <li>
-              <div class="team-card">
+              <div class="team-card-field">
                 <img src="./images/img1.jpg" alt="Mark Guerrero" width="264" />
                 <div class="team-card-comment">
                   <h3>Mark Guerrero</h3>
@@ -234,7 +219,7 @@
               </div>
             </li>
             <li>
-              <div class="team-card">
+              <div class="team-card-field">
                 <img src="./images/img2.jpg" alt="Tom Ford" width="264" />
                 <div class="team-card-comment">
                   <h3>Tom Ford</h3>
@@ -283,7 +268,7 @@
               </div>
             </li>
             <li>
-              <div class="team-card">
+              <div class="team-card-field">
                 <img src="./images/img3.jpg" alt="Camila Garcia" width="264" />
                 <div class="team-card-comment">
                   <h3>Camila Garcia</h3>
@@ -332,7 +317,7 @@
               </div>
             </li>
             <li>
-              <div class="team-card">
+              <div class="team-card-field">
                 <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" />
                 <div class="team-card-comment">
                   <h3>Daniel Wilson</h3>
@@ -388,111 +373,119 @@
       <!--Dördüncü Alan-->
       <section class="fourth-section-box">
         <div class="container">
-          <h2 class="fourth-section-title">Our Portfolio</h2>
-          <ul class="list-one">
-            <li>
-              <div class="card">
-                <div class="card-image-container">
-                  <img src="./images/img5.jpg" alt="Banking App" width="360" />
-                  <div class="card-overlay">
-                    <p>More Info Here</p>
+          <div class="portfolio-field">
+            <h2 class="fourth-section-title">Our Portfolio</h2>
+            <ul class="portfolio-list">
+              <li>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img
+                      src="./images/img5.jpg"
+                      alt="Banking App"
+                      width="360"
+                    />
+                    <div class="card-overlay">
+                      <p>More Info Here</p>
+                    </div>
+                  </div>
+                  <div class="card-comment">
+                    <h3>Banking App</h3>
+                    <p>App</p>
                   </div>
                 </div>
-                <div class="card-comment">
-                  <h3>Banking App</h3>
-                  <p>App</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <div class="card-image-container">
-                  <img
-                    src="./images/img6.jpg"
-                    alt="Cashless Payment"
-                    width="360"
-                  />
-                  <div class="card-overlay">
-                    <p>More Info Here</p>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img
+                      src="./images/img6.jpg"
+                      alt="Cashless Payment"
+                      width="360"
+                    />
+                    <div class="card-overlay">
+                      <p>More Info Here</p>
+                    </div>
+                  </div>
+                  <div class="card-comment">
+                    <h3>Cashless Payment</h3>
+                    <p>Marketing</p>
                   </div>
                 </div>
-                <div class="card-comment">
-                  <h3>Cashless Payment</h3>
-                  <p>Marketing</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <div class="card-image-container">
-                  <img
-                    src="./images/img7.jpg"
-                    alt="Meditation App"
-                    width="360"
-                  />
-                  <div class="card-overlay">
-                    <p>More Info Here</p>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img
+                      src="./images/img7.jpg"
+                      alt="Meditation App"
+                      width="360"
+                    />
+                    <div class="card-overlay">
+                      <p>More Info Here</p>
+                    </div>
+                  </div>
+                  <div class="card-comment">
+                    <h3>Meditation App</h3>
+                    <p>App</p>
                   </div>
                 </div>
-                <div class="card-comment">
-                  <h3>Meditation App</h3>
-                  <p>App</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="list-two">
-            <li>
-              <div class="card">
-                <div class="card-image-container">
-                  <img src="./images/img8.jpg" alt="Taxi Service" width="360" />
-                  <div class="card-overlay">
-                    <p>More Info Here</p>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img
+                      src="./images/img8.jpg"
+                      alt="Taxi Service"
+                      width="360"
+                    />
+                    <div class="card-overlay">
+                      <p>More Info Here</p>
+                    </div>
+                  </div>
+                  <div class="card-comment">
+                    <h3>Taxi Service</h3>
+                    <p>Marketing</p>
                   </div>
                 </div>
-                <div class="card-comment">
-                  <h3>Taxi Service</h3>
-                  <p>Marketing</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <div class="card-image-container">
-                  <img
-                    src="./images/img9.jpg"
-                    alt="Screen Illustrations"
-                    width="360"
-                  />
-                  <div class="card-overlay">
-                    <p>More Info Here</p>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img
+                      src="./images/img9.jpg"
+                      alt="Screen Illustrations"
+                      width="360"
+                    />
+                    <div class="card-overlay">
+                      <p>More Info Here</p>
+                    </div>
+                  </div>
+                  <div class="card-comment">
+                    <h3>Screen Illustrations</h3>
+                    <p>Design</p>
                   </div>
                 </div>
-                <div class="card-comment">
-                  <h3>Screen Illustrations</h3>
-                  <p>Design</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <div class="card-image-container">
-                  <img
-                    src="./images/img10.jpg"
-                    alt="Online Courses"
-                    width="360"
-                  />
-                  <div class="card-overlay">
-                    <p>More Info Here</p>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img
+                      src="./images/img10.jpg"
+                      alt="Online Courses"
+                      width="360"
+                    />
+                    <div class="card-overlay">
+                      <p>More Info Here</p>
+                    </div>
+                  </div>
+                  <div class="card-comment">
+                    <h3>Online Courses</h3>
+                    <p>Marketing</p>
                   </div>
                 </div>
-                <div class="card-comment">
-                  <h3>Online Courses</h3>
-                  <p>Marketing</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--Dördüncü Alan Bitti-->
@@ -586,14 +579,21 @@
     </main>
     <!-- Main Alanı Bitti-->
   </body>
-  <!-- <div class="modal-overlay">
+  <!-- Form Alanı -->
+  <input
+    type="checkbox"
+    id="form-toggle"
+    checked class="form-toggle-checkbox"
+    aria-label="Toggle form"
+  />
+  <div class="modal-overlay">
     <div class="modal">
       <div class="button-field">
-        <button class="close-button" type="button">
+        <label for="form-toggle" class="close-button">
           <svg height="8" width="8" class="icon-close">
             <use xlink:href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button>
+        </label>
       </div>
       <p class="modal-comment">Leave your contacts and we will call you back</p>
 
@@ -651,14 +651,16 @@
             ></textarea>
           </div>
         </div>
-<label class="checkbox-label">
-  <input type="checkbox" class="checkbox-input" />
-  <span class="checkbox-text">
-    I accept the terms and conditions of the <span class="span-checkbox">Privacy Policy</span>
-  </span>
-</label>
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox-input" />
+          <span class="checkbox-text">
+            I accept the terms and conditions of the
+            <span class="span-checkbox">Privacy Policy</span>
+          </span>
+        </label>
         <button class="send-button">Send</button>
       </form>
     </div>
-  </div> -->
+  </div>
+  <!-- Form Alanı Bitti -->
 </html>
